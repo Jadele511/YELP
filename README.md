@@ -1,35 +1,38 @@
-### Basic Yelp client
+Yelp (raw)
+This is a Yelp search app using the Yelp API.
 
-This is a headless example of how to implement an OAuth 1.0a Yelp API client. The Yelp API provides an application token that allows applications to make unauthenticated requests to their search API.
+Time spent: 20h
 
-### Next steps
+Features
+Required
 
-- Check out `BusinessesViewController.swift` to see how to use the `Business` model.
+[ ] Search results page
 
-### Sample request
+[ ] Table rows should be dynamic height according to the content height
 
-**Basic search with query**
+[ ] Custom cells should have the proper Auto Layout constraints
 
-```
-Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: NSError!) -> Void in
-    self.businesses = businesses
-    
-    for business in businesses {
-        println(business.name!)
-        println(business.address!)
-    }
-})
-```
+[ ] Search bar is in the navigation bar (doesn't have to expand to show location like the real Yelp app does).
 
-**Advanced search with categories, sort, and deal filters**
+[ ] The filters you should actually have are: category, sort (best match, distance, highest rated), radius (meters), deals (on/off).
 
-```
-Business.searchWithTerm("Restaurants", sort: .Distance, categories: ["asianfusion", "burgers"], deals: true) { (businesses: [Business]!, error: NSError!) -> Void in
+[ ] The filters table should be organized into sections as in the mock.
 
-    for business in businesses {
-        println(business.name!)
-        println(business.address!)
-    }
-}
-```
-# YELP
+[ ] You can use the default UISwitch for on/off states. Optional: implement a custom switch
+
+[ ] Clicking on the “Search” button should dismiss the filters page and trigger the search w/ the new filter settings.
+
+[ ] Display some of the available Yelp categories (choose any 3-4 that you want).
+
+Optional
+
+[ ] Search results page
+
+[ ] Infinite scroll for restaurant results
+
+
+[ ] Filter page
+
+
+Walkthrough
+![Video Walkthrough](yelp - Jade.gif)
