@@ -1,4 +1,5 @@
-Yelp (raw)
+Yelp 
+
 This is a Yelp search app using the Yelp API.
 
 Time spent: 20h
