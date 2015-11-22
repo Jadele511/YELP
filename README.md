@@ -36,4 +36,4 @@ Optional
 
 
 Walkthrough
-![Video Walkthrough](yelp - Jade.gif)
+![Video Walkthrough](Yelp - Jade.gif)
